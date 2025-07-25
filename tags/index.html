@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | epsirc</title>
+    <title>Tags: 文章 | epsirc</title>
     <meta name="author" content="epsirc" />
     <meta name="description" content="一个简单的博客" />
-    <meta name="keywords" content="" />
+    <meta name="keywords" content="没有幸福像这种幸福：寂静的清晨，来自河流的光，周末就在眼前。" />
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -39,8 +39,6 @@
 <script src="/js/lib/preview.js"></script>
 
 
-
-<script src="/js/lib/search.js"></script>
 
 
 
@@ -77,6 +75,11 @@
         <a href="/archives">
             <i class="fa-solid fa-box-archive fa-fw"></i>
             <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
         </a>
         
         <a href="/tags">
@@ -120,6 +123,15 @@
                     </div>
                 </a>
                 
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
                 <a href="/tags">
                     <div class="item">
                         <div style="min-width: 20px; max-width: 50px; width: 10%">
@@ -138,57 +150,55 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
+            <div id="archives">
     
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
+    <div class="categories-tags">
         
-        <div class="timeline" data-title="第一篇文章">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/6/11</div>
-                <a href="/2025/06/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-                    <h3>第一篇文章</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/%E6%96%87%E7%AB%A0/" style="color: #ff7d73">
-                                文章
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
         
-        <div class="timeline" data-title="">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2025/7/25</div>
-                <a href="/2025/07/25/About/">
-                    <h3></h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
+        
+        <span>
+            <a href="/tags/%E6%96%87%E7%AB%A0/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                文章
+            </a>
+        </span>
+        
+        
+        
         
     </div>
+    
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2025/6/11</div>
+            <a href="/2025/06/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
+                <h3>第一篇文章</h3>
+            </a>
+            <div class="info">
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/tags/%E6%96%87%E7%AB%A0/" style="color: #00bcd4">
+                            文章
+                        </a>
+                    </span>
+                    
+                </span>
+                
+            </div>
+        </div>
+    </div>
+    
 </div>
 
             <footer id="footer">
